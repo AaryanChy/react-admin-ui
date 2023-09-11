@@ -1,10 +1,35 @@
+@import "./css-variables.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main {
+  background-color: $main-bg;
+  color: $text-color;
+}
+
+.container {
+  display: flex;
+}
+
+.menuContainer {
+  width: 250px;
+  padding: 5px 20px;
+  border-right: 2px solid $light-bg;
+}
+
+.contentContainer {
+  width: 100%;
+
+  padding: 20px;
 }
