@@ -6,6 +6,8 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Login from "./pages/login/login";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import UserInfo from "./pages/userInfo/UserInfo";
+import ProductInfo from "./pages/productInfo/ProductInfo";
 function App() {
   const Layout = () => {
     return (
@@ -39,6 +41,14 @@ function App() {
         {
           path: "/products",
           element: <Products />,
+        },
+        {
+          path: "/users/:id",
+          element: <UserInfo />,
+        },
+        {
+          path: "/products/:id",
+          element: <ProductInfo />,
         },
       ],
     },

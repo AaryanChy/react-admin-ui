@@ -1,3 +1,18 @@
 .users {
-  background-color: aqua;
+  position: relative;
+  .info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    button {
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.MuiDataGrid-toolbarContainer {
+  flex-direction: row-reverse;
 }

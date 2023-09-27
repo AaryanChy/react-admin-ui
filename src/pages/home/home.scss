@@ -1,7 +1,6 @@
 @import "../../styles/css-variables.scss";
 .home {
   display: grid;
-
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
